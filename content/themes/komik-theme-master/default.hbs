@@ -11,7 +11,6 @@
     {{! feed, styles, etc. }}
     <link rel="stylesheet" href="{{asset 'css/styles.css'}}" type="text/css">
     <link rel="alternate" title="RSS" href="{{@blog.url}}/rss/" type="application/rss+xml">
-
     {{! ghost stuff - dont' remove this }}
     {{ghost_head}}
 </head>
@@ -36,14 +35,14 @@
     <footer class="main-footer">
         <div class="page-wrapper">
             <p><a href="{{@blog.url}}/rss/">Subscribe to RSS</a> updates.</p>
+            <p> Powered with <a href="https://www.ghost.org">Ghost</a> and the
+               <a href="https://www.github.com/belen-albeza/komik-theme">Komik</a> theme. </p>
             <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
-               Powered with <a href="https://www.ghost.org">Ghost</a> and the
-               <a href="https://www.github.com/belen-albeza/komik-theme">Komik</a> theme.
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
             </p>
         </div><!-- page wrapper -->
     </footer>
 
     {{! ghost stuff - don't remove this! }}
     {{ghost_foot}}
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5888add92ba053d0"></script>
 </body>
