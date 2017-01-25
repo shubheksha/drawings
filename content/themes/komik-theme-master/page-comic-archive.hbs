@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{#post}}
+<article class="page archive">
+    <header>
+        <h1>{{title}}</a></h1>
+    </header>
+
+    <div class="readable">
+    {{content}}
+    {{#get "posts" include="title,url,published_at" order="reverse"}}
+    <nav class="archive-list"><ol>
+        {{#foreach posts}}
+        <li>
+            <a href="{{url}}">{{title}}</a>
+            <timestamp datetime="{{date format='YYYY-MM-DD'}}">{{date}}</timestamp>
+        </li>
+        {{/foreach}}
+    </ol></nav>
+    {{/get}}
+    </div>
+
+    <footer><p><a href="{{url}}">Permalink</a></p></footer>
+</article>
+{{/post}}
