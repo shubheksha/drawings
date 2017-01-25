@@ -221,3 +221,7 @@ archive page style
     font-size: 0.8em;
     white-space: nowrap;
 }
+
+a.at-share-btn {
+    box-shadow: none;
+}
