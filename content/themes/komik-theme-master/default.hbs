@@ -10,7 +10,7 @@
 
     {{! feed, styles, etc. }}
     <link rel="stylesheet" href="{{asset 'css/styles.css'}}" type="text/css">
-    <link rel="alternate" title="RSS" href="{{@blog.url}}/feed.rss/" type="application/rss+xml">
+    <link rel="alternate" title="RSS" href="{{@blog.url}}/feed.rss" type="application/rss+xml">
     <script type="text/javascript">
         var addthis_share = addthis_share || {}
         addthis_share = {
@@ -45,7 +45,7 @@
 
     <footer class="main-footer">
         <div class="page-wrapper">
-            <p><a href="{{@blog.url}}/feed.rss/">Subscribe to RSS</a> updates.</p>
+            <p><a href="{{@blog.url}}/feed.rss">Subscribe to RSS</a> updates.</p>
             <p> Powered with <a href="https://www.ghost.org">Ghost</a> and the
                <a href="https://www.github.com/belen-albeza/komik-theme">Komik</a> theme. </p>
             <p>© {{date format="YYYY"}} {{@blog.title}}. All rights reserved.<br>
