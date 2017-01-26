@@ -137,9 +137,9 @@ def main():
                     f.write(newtext)
 
         def trans_local_domain_to_github_pages(text):
-            #modified_text = text.replace('localhost:2368', github_url)
-            modified_text = re.sub(r"localhost:2368", "shubheksha.com/drawings", text)
-            modified_text = re.sub(r"127.0.0.1:2368", "shubheksha.com/drawings", text)
+            modified_text = text.replace('localhost:2368', 'shubheksha.com/drawings')
+            #modified_text = re.sub(r"localhost:2368", "shubheksha.com/drawings", text)
+            #modified_text = re.sub(r"127.0.0.1:2368", "shubheksha.com/drawings", text)
             return modified_text
 
         def fix_font_tags(text):
@@ -172,7 +172,7 @@ def main():
 
         for root, dirs, filenames in os.walk(static_path):
             for filename in filenames:
-                if filename.endswith(('.html', '.xml', '.css', '.xsl', '.rss')):
+                if filename.endswith(('.html', '.xml', '.css', '.xsl', '.rss', '.txt', '.js')):
                     filepath = os.path.join(root, filename)
                     with open(filepath) as f:
                         filetext = f.read()
